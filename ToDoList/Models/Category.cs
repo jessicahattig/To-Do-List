@@ -26,5 +26,15 @@ namespace ToDoList.Models
     {
       return _instances;
     }
+
+    public static Category Find(int SearchId)
+    {
+      return _instances[SearchId-1];
+    }
+
+    public void AddItem(Item item)
+    {
+    Items.Add(item);
+    }
   }
 }

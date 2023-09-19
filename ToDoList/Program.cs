@@ -13,6 +13,7 @@ namespace ToDoList
 
       WebApplication app = builder.Build();
 
+    //   app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
 
       app.UseRouting();
